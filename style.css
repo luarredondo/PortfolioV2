@@ -1,0 +1,74 @@
+html{
+    background-image: url("assets/background.png");
+    background-attachment: fixed;
+}
+
+body{
+    display: flex;
+    font-family: 'Nova Square', cursive;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+    margin: 10px 2px 0px -8px;
+
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: black;   
+}
+
+.icons-navbar{
+    width: 50px;
+    height: 50px;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.container{
+    display: flex;
+    margin: 10px 40px;
+}
+
+.carde-left-static{
+    width: 600px;
+
+    margin-left: 15px;
+    padding: 20px;    
+
+    background-color: rgba(88, 93 , 87, 0.3);
+    border-radius: 8px;
+    border: solid 2px white;
+
+    color: white;
+    text-align: justify;
+}
+
+.token{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 64px;
+    border: solid 2px black;
+/*  box-shadow: 1px; */
+}
+
+
+.carde:hover{
+    background-color: red;
+    transition: 1s;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
