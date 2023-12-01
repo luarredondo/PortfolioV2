@@ -8,6 +8,35 @@ body{
     font-family: 'Nova Square', cursive;
 }
 
+header{
+    position: absolute;
+
+    top: 20%;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.yellow:hover{
+    background-color: white;
+    border-radius: 4px;
+    color: orange;
+    
+    transition: 1s;
+}
+
+.blue{
+    color: blue;
+}
+
+.blue:hover{
+    background-color: white;
+    border-radius: 4px;
+    color: cyan;
+
+    transition: 1s;
+}
 
 /* NAVBAR */
 
@@ -42,7 +71,8 @@ body{
 .carde-left-static{
     width: 600px;
 
-    margin-left: 15px;
+    position: absolute;
+    left: 150px;
     padding: 20px;    
 
     background-color: rgba(88, 93 , 87, 0.3);
@@ -50,7 +80,7 @@ body{
     border: solid 2px white;
 
     color: white;
-    text-align: justify;
+    text-align: center;
 }
 
 .token{
@@ -71,4 +101,163 @@ body{
 img{
     width: 200px;
     height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Spooky */
+#flex{
+    width: 100px;
+    height: 200px;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: 7;
+}
+
+
+
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+
+#spooky{
+    margin: 5% auto;
+    width: 40%;
+    height: 40%;
+    animation: floaty 2s infinite;
+    z-index: 7;
+}
+
+#spooky #body{
+    position: relative;
+    margin: 50px auto 0;
+    width: 90px;
+    height: 110px;
+    background: #f2fbf1;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+}
+
+#spooky #body:before,
+#spooky #body:after{
+    content: '';
+    position: absolute;
+    top: 65px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #f2fbf1;
+    animation: floaty .2s infinite;
+}
+
+#spooky #body:before{
+    left: -9px;
+}
+
+#spooky #body:after{
+    right: -9px;
+}
+
+
+#spooky #body #eyes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 45px 0 0;
+    width: 45px;
+    height: 20px;
+}
+
+
+#spooky #body #eyes:before,
+#spooky #body #eyes:after{
+    content: ' ';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #252c49;
+    border-radius: 50%;    
+}
+
+#spooky #body #mouth{
+    background: #252c49 ;
+    margin: 0 auto 0;
+    width: 15px;
+    height: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+#spooky #body #mouth:before{
+    content: ' ';
+    display: block;
+    background: #FFF;
+    margin-left: 7px;
+    width: 5px;
+    height: 5px;
+}
+
+
+#spooky #body #feet{
+    position: absolute;
+    display: flex;
+    bottom: -9px;
+    width: 90px;
+    height: 18px;
+}
+
+
+
+#spooky #body #feet >*,
+#spooky #body #feet::before,
+#spooky #body #feet::after{
+    content: ' ';
+    width: 18px;
+    height: 18px;
+    background: #f2fbf1;
+    border-radius: 50%;
+}
+
+#shadow{
+    margin: 50px auto -50px;
+    background: #353333;
+    width: 90px;
+    height: 20px;
+    border-radius: 50%;
+    animation: zoomy 2s infinite;
+}
+
+@keyframes floaty {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100%{
+        transform: scale(1);
+    }
+    
+    50%{
+        transform: scale(0.8);
+    }
 }
