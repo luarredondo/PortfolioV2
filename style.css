@@ -16,6 +16,7 @@ header{
 
 .yellow{
     color: yellow;
+    transition: 1s ease;
 }
 
 .yellow:hover{
@@ -28,6 +29,7 @@ header{
 
 .blue{
     color: blue;
+    transition: 1s ease;
 }
 
 .blue:hover{
@@ -50,6 +52,8 @@ header{
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     background-color: black;   
+    border: 2px solid white;
+    border-left: 2px solid black;
 }
 
 .icons-navbar{
@@ -83,9 +87,15 @@ header{
     text-align: center;
 }
 
+.carde-left-static .header-carde{
+    margin-bottom: 50pxq;
+}
+
 .token{
     width: 100px;
     height: 100px;
+
+    margin-bottom: 50px;
 
     border-radius: 64px;
     border: solid 2px black;
@@ -99,10 +109,98 @@ header{
 }
 
 img{
-    width: 200px;
+    width: 150px;
     height: 200px;
+
+    color: rgba(0, 0, 0,0);
 }
 
+
+
+
+/* IMG DOC */
+
+.container-img {
+    width: 100%;
+
+    position: relative;
+    margin: 10px;
+
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .centre-img {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0;
+
+  }
+  
+  .container-img:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container-img:hover .centre-img {
+    opacity: 1;
+  }
+  
+  .text-img {
+    padding: 2px 4px;
+
+    background-color: #4B4545;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid white;
+    text-decoration: none;
+  }
+
+/*HREF*/
+
+.link-reseau {
+    align-items: center;
+    margin: auto;
+
+    align-items: center;
+
+    border-radius: 16px;
+    background-color: black;   
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.link-reseau img {
+    width: 40px;
+    height: 40px;
+
+    padding: 4px;
+    margin: 10px;
+
+    border-radius: 4px;
+}
+
+.link-reseau img:hover {
+    background-color: rgb(54, 52, 52);
+
+    transition: 1s ease;
+}
 
 
 
